@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vincent.cloud">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+    <application
+        android:name=".base.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.QQLoginActivity"/>
+        <activity android:name=".ui.WXLoginActivity"/>
+        <activity android:name=".ui.SinaLoginActivity"/>
+
+        <!--QQ登录配置 start-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106210336" />
+            </intent-filter>
+        </activity>
+
+        <!--SDK_V2.0引入了AssistActivity，开发者需在androidManifest.xml中注册。代码如下：-->
+
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <!--QQ登录配置 end-->
+
+        <!--微信登录配置 start-->
+        <activity android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@style/wx_login_style"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <!--微信登录配置 end-->
+
+    </application>
+
+</manifest>

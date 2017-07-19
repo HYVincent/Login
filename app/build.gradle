@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.vincent.cloud"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+
+    signingConfigs {
+
+        debug {
+            storeFile file("../CCloud.jks")
+            storePassword '444444'
+            keyAlias '日昱物流客户端'
+            keyPassword '444444'
+        }
+
+        release {
+            storeFile file("../CCloud.jks")
+            storePassword '444444'
+            keyAlias '日昱物流客户端'
+            keyPassword '444444'
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5793_lite.jar')
+    compile 'com.alibaba:fastjson:1.1.56.android'
+    compile 'com.vise.xiaoyaoyou:viselog:1.0.0'
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+
+    /**
+     * 微信登录分享支付等。。
+     */
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+
+    compile 'com.zhy:okhttputils:2.6.2'
+
+    /**
+     * 新浪微博登录
+     */
+    compile 'com.sina.weibo.sdk:core:2.0.3:openDefaultRelease@aar'
+}
