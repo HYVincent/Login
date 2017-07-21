@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color_white_ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_margin="@dimen/size_15"
+        android:textSize="@dimen/text_size_18sp"
+        android:text="分享到:"
+        android:textColor="@color/color_blue_4562e9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:id="@+id/dlg_shared_wx_friend"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/icon_wx_friend"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40" />
+
+            <TextView
+                android:layout_marginTop="@dimen/size_15"
+                android:text="微信好友"
+                android:textColor="@color/color_blue_4562e9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/dlg_shared_wx_friend_circle"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_wx_friend_circle"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40" />
+
+            <TextView
+                android:layout_marginTop="@dimen/size_15"
+                android:text="微信朋友圈"
+                android:textColor="@color/color_blue_4562e9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dlg_shared_wx_collect"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_wx_collect"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40" />
+
+            <TextView
+                android:layout_marginTop="@dimen/size_15"
+                android:text="微信收藏"
+                android:textColor="@color/color_blue_4562e9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dlg_shared_qq_friend"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_qq"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40" />
+
+            <TextView
+                android:layout_marginTop="@dimen/size_15"
+                android:text="QQ好友"
+                android:textColor="@color/color_blue_4562e9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/dlg_shared_qq_friend_zone"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_qq_zone"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40" />
+
+            <TextView
+                android:layout_marginTop="@dimen/size_15"
+                android:text="QQ空间"
+                android:textColor="@color/color_blue_4562e9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/dlg_shared_sina"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_width="@dimen/size_0"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@mipmap/icon_sina"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40" />
+
+            <TextView
+                android:layout_marginTop="@dimen/size_15"
+                android:text="新浪微博"
+                android:textColor="@color/color_blue_4562e9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <include layout="@layout/common_layout_line_1px"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/size_10"
+        android:id="@+id/dlg_shared_cancel"
+        android:padding="@dimen/size_10"
+        android:textSize="@dimen/text_size_18sp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/color_blue_4562e9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
