@@ -32,11 +32,24 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.release
+            //启用代码混淆
+            minifyEnabled true
+            //zip压缩
+            zipAlignEnabled true
+            //移除无用的resource文件
+            shrinkResources true
+            //混淆规则配置文件
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
         release {
             signingConfig signingConfigs.release
+            //开启混淆
+            minifyEnabled true
+            zipAlignEnabled true
+            //移除无用的resource文件
+            shrinkResources true
+
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
