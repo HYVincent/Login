@@ -26,6 +26,7 @@
         <activity android:name=".ui.QQLoginActivity"/>
         <activity android:name=".ui.WXLoginActivity"/>
         <activity android:name=".ui.SinaLoginActivity"/>
+        <activity android:name=".ui.SharedActivity"/>
 
         <!--QQ登录配置 start-->
         <activity

@@ -1,4 +1,4 @@
-package com.stop.car.auth;
+package com.vincent.cloud.auth;
 
 import android.app.Activity;
 import android.content.Context;

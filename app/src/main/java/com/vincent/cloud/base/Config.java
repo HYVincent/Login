@@ -55,4 +55,6 @@ public class Config {
                     + "friendships_groups_read,friendships_groups_write,statuses_to_me_read,"
                     + "follow_app_official_microblog," + "invitation_write";
 
+    public static final String APP_LOGO_URL = "http://182.254.232.121:8080/commonImg/stop_car_app_logo.png";
+
 }

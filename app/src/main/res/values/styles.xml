@@ -22,5 +22,23 @@
         <!--<item name="android:background">@color/color_transparent_9000</item>-->
     </style>
 
+    <!--分享dialog-->
+    <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!--分享dialog-->
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/translate_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_dialog_out</item>
+    </style>
+
+    <!--透明背景色-->
+    <style name="TransparencyBackground" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/common_color_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
 
 </resources>

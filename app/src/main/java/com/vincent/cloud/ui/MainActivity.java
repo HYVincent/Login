@@ -32,5 +32,11 @@ public class MainActivity extends AppCompatActivity {
                 SinaLoginActivity.actionStart(MainActivity.this);
             }
         });
+        findViewById(R.id.btn_common_shared).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedActivity.actionStart(MainActivity.this);
+            }
+        });
     }
 }

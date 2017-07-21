@@ -3,4 +3,57 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="common_color_transparent">#aa000001</color>//完全透明颜色值
+
+    <color name="color_white_ffffff">#ffffff</color>
+    <color name="color_white_fafafa">#fafafa</color>
+    <color name="color_white_eeeeee">#eeeeee</color>
+    <color name="color_white_f1f3f4">#f1f3f4</color>
+    <color name="color_white_dedce0">#dedce0</color>
+    <color name="color_white_e0e2e8">#e0e2e8</color>
+
+
+    <color name="color_gray_f2f3f5">#f2f3f5</color>
+    <color name="color_gray_cfd7e1">#cfd7e1</color>
+    <color name="color_gray_c5c7cc">#c5c7cc</color>
+    <color name="color_gray_c5c7ce">#c5c7ce</color>
+    <color name="color_gray_cad2df">#cad2df</color>
+    <color name="color_gray_9fa1a9">#9fa1a9</color>
+    <color name="color_gray_a9adb6">#a9adb6</color>
+    <color name="color_gray_6f7b89">#6f7b89</color>
+
+    <color name="color_gray_888888">#888888</color>
+
+    <color name="color_black_646f7f">#646f7f</color>
+    <color name="color_black_3d4550">#3d4550</color>
+    <color name="color_black_3d444d">#3d444d</color>
+
+
+
+    <color name="color_orangered_ff5500">#ff5500</color>
+    <color name="color_orangered_ff5002">#ff5002</color>
+    <color name="color_red_ff6464">#ff6464</color>
+    <color name="color_red_ff7668">#ff7668</color>
+    <color name="color_blue_6495ED">#6495ED</color>
+    <color name="color_blue_778df1">#778df1</color>
+    <color name="color_blue_3884dc">#3884dc</color>
+    <color name="color_blue_6471f4">#6471f4</color>
+    <color name="color_blue_79acff">#79acff</color>
+    <color name="color_blue_4562e9">#4562e9</color>
+
+    <color name="color_blue_1296db">#1296db</color>
+
+
+    <color name="color_green_8ec31f">#8ec31f</color>
+    <color name="color_green_73aa00">#73aa00</color>
+    <color name="color_green_89c018">#89c018</color>
+
+    <color name="color_cyan_3fa1a9">#3fa1a9</color>
+
+    <color name="color_yellow_f5ae53">#f5ae53</color>
+
+
+
+
 </resources>

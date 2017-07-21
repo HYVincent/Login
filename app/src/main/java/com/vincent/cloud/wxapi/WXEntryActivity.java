@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.tencent.mm.opensdk.modelbase.BaseReq;
@@ -85,7 +86,7 @@ public class WXEntryActivity extends AppCompatActivity implements IWXAPIEventHan
         String result = "";
         switch(baseResp.errCode) {
             case BaseResp.ErrCode.ERR_OK:
-//                result ="发送成功";
+                result ="发送成功";
 //                showDialog("正在获取个人资料..");
                 //现在请求获取数据 access_token https://api.weixin.qq.com/sns/oauth2/access_token?appid=APPID&secret=SECRET&code=CODE&grant_type=authorization_code
 //                showMsg(1,result);
@@ -139,12 +140,13 @@ public class WXEntryActivity extends AppCompatActivity implements IWXAPIEventHan
                 result = "签名错误";
                 ViseLog.d("签名错误");
                 break;
-            /*default:
+            default:
                 result = "发送返回";
-                showMsg(0,result);
+//                showMsg(0,result);
                 finish();
-                break;*/
+                break;
         }
+        Toast.makeText(WXEntryActivity.this,result,Toast.LENGTH_LONG).show();
 
     }
 
