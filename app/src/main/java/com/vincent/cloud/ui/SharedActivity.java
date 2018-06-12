@@ -31,7 +31,7 @@ import com.vincent.cloud.util.DialogUtils;
  * @name Login
  * @class name：com.vincent.cloud.ui
  * @class describe
- * @anthor Vincent QQ:1032006226
+ * @anthor Vincent
  * @time 2017/7/21 10:41
  * @change
  * @chang time

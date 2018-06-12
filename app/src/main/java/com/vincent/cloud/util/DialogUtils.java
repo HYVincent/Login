@@ -15,7 +15,7 @@ import com.vincent.cloud.R;
  * @name Login
  * @class name：com.vincent.cloud.util
  * @class describe
- * @anthor Vincent QQ:1032006226
+ * @anthor Vincent
  * @time 2017/7/21 10:47
  * @change
  * @chang time

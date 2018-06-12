@@ -6,7 +6,7 @@ import java.io.Serializable;
  * @name Login
  * @class name：com.vincent.cloud.entity
  * @class describe
- * @anthor Vincent QQ:1032006226
+ * @anthor Vincent
  * @time 2017/7/19 12:59
  * @change
  * @chang time

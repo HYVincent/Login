@@ -21,7 +21,7 @@ import com.vise.log.ViseLog;
  * @name Login
  * @class name：com.vincent.cloud
  * @class describe
- * @anthor Vincent QQ:1032006226
+ * @anthor Vincent
  * @time 2017/7/19 10:34
  * @change
  * @chang time
