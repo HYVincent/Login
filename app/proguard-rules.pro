@@ -159,3 +159,12 @@
 
 #实体类不混淆
 -keep class com.vincent.cloud.entity.** {*;}
+
+# google login
+#-dontwarn com.google.android.gms.internal.**
+#-dontwarn com.google.android.gms.common.**
+#-dontwarn com.google.android.gms.ads.**
+#-dontwarn com.google.android.gms.measurement.**
+#-dontwarn com.google.android.gms.common.internal.**
+-dontwarn com.google.android.gms.**
+-dontwarn org.w3c.dom.bootstrap.**

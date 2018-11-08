@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 27
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.vincent.cloud"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -23,6 +24,8 @@ android {
         }
 
         release {
+            //SHA1: 4A2FD3626FFED787BB9D9C11FF0443914F0CD3F0
+            //      409E5F60CD8EB4F00F5C5BE63A70A29E
             storeFile file("../CCloud.jks")
             storePassword '444444'
             keyAlias '日昱物流客户端'
@@ -81,4 +84,16 @@ dependencies {
      */
     compile 'com.sina.weibo.sdk:core:2.0.3:openDefaultRelease@aar'
     compile files('libs/wechat-sdk-android-with-mta-1.3.4.jar')
+
+    /**
+     * FaceBook登陆
+     */
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+    /**
+     * Google + 客户端id:51969890975-hies4ihocg4hkj5utpc5e9bnji961hbk.apps.googleusercontent.com
+     */
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
 }

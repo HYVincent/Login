@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "51969890975",
+    "firebase_url": "https://adroit-citadel-221909.firebaseio.com",
+    "project_id": "adroit-citadel-221909",
+    "storage_bucket": "adroit-citadel-221909.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51969890975:android:83bf87cbe037a322",
+        "android_client_info": {
+          "package_name": "com.vincent.cloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51969890975-hies4ihocg4hkj5utpc5e9bnji961hbk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vincent.cloud",
+            "certificate_hash": "4a2fd3626ffed787bb9d9c11ff0443914f0cd3f0"
+          }
+        },
+        {
+          "client_id": "51969890975-at406qrm4ub549rd2j9jqc1c28e4k8vv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-XXKhm0vkyDTaY6QSZhOWo6ncMq8g5UU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51969890975-at406qrm4ub549rd2j9jqc1c28e4k8vv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

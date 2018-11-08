@@ -3,6 +3,7 @@ package com.vincent.cloud.base;
 import android.app.Application;
 import android.util.Log;
 
+import com.facebook.appevents.AppEventsLogger;
 import com.sina.weibo.sdk.WbSdk;
 import com.sina.weibo.sdk.auth.AuthInfo;
 import com.vincent.cloud.util.SharedPreferencesUtils;
@@ -41,6 +42,11 @@ public class App extends Application {
         initLogs();
         initTest();
         initSinaLogin();
+        initFaceBook();
+    }
+
+    private void initFaceBook() {
+        AppEventsLogger.activateApp(this);
     }
 
     private void initSinaLogin() {

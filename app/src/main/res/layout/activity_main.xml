@@ -26,6 +26,18 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:text="FaceBook登陆"
+        android:id="@+id/btn_facebook_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Google+登陆"
+        android:id="@+id/btn_google_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
         android:text="分享"
         android:id="@+id/btn_common_shared"
         android:layout_width="match_parent"

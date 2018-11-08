@@ -38,5 +38,17 @@ public class MainActivity extends AppCompatActivity {
                 SharedActivity.actionStart(MainActivity.this);
             }
         });
+        findViewById(R.id.btn_facebook_login).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FaceBookLoginActivity.actionStart(MainActivity.this);
+            }
+        });
+        findViewById(R.id.btn_google_login).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GoogleLoginActivity.actionStart(MainActivity.this);
+            }
+        });
     }
 }
