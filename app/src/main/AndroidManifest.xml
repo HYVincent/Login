@@ -29,6 +29,7 @@
         <activity android:name=".ui.SharedActivity" />
         <activity android:name=".ui.FaceBookLoginActivity" />
         <activity android:name=".ui.GoogleLoginActivity"/>
+        <activity android:name=".ui.TwitterLoginActivity"/>
 
         <!--QQ登录配置 start-->
         <activity
@@ -83,14 +84,20 @@
         </activity>
 
 
+
         <!--Google + login-->
         <!--<meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-################~##########"/>-->
 
-
         <meta-data android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <!--Twitter登录-->
+      <!--  <resources>
+            <string android:name="com.twitter.sdk.android.CONSUMER_KEY">XXXXXXXXXXX</string>
+            <string android:name="com.twitter.sdk.android.CONSUMER_SECRET">XXXXXXXXXXX</string>
+        </resources>-->
 
     </application>
 

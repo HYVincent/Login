@@ -58,6 +58,21 @@ android {
 
     }
 
+    //配置自定义打包名称
+   /* applicationVariants.all { variant ->
+        variant.outputs.all {
+            def fileName
+            def date = new Date()
+            def formattedDateDebug = date.format('yyyyMMdd')
+            def formattedDate = date.format('yyyyMMddHHmmss')
+            if (variant.buildType.name.equals('release')) {
+                fileName = "城昱"+"${variant.mergedFlavor.versionName}_release_${formattedDate}.apk"
+            } else if (variant.buildType.name.equals('debug')) {
+                fileName = "城昱"+"${variant.mergedFlavor.versionName}_debug_${formattedDateDebug}.apk"
+            }
+            outputFileName = fileName;
+        }
+    }*/
 
 }
 
@@ -96,4 +111,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.5'
     implementation 'com.google.firebase:firebase-auth:16.0.5'
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
+
+    /**
+     * Twitter 登录
+     */
+    implementation 'com.twitter.sdk.android:twitter:3.1.1'
 }

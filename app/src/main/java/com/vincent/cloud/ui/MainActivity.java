@@ -50,5 +50,11 @@ public class MainActivity extends AppCompatActivity {
                 GoogleLoginActivity.actionStart(MainActivity.this);
             }
         });
+        findViewById(R.id.btn_twitter_login).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TwitterLoginActivity.actionStart(MainActivity.this);
+            }
+        });
     }
 }

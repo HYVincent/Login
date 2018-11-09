@@ -26,14 +26,23 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:textAllCaps="false"
         android:text="FaceBook登陆"
         android:id="@+id/btn_facebook_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
+        android:textAllCaps="false"
         android:text="Google+登陆"
         android:id="@+id/btn_google_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textAllCaps="false"
+        android:text="Twitter Login"
+        android:id="@+id/btn_twitter_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
