@@ -10,6 +10,13 @@
         android:layout_height="wrap_content"
         android:text="Button" />
 
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btn_test_http"
+        android:text="test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <ImageView
         android:scaleType="center"
         android:id="@+id/iv_head_url_sina"

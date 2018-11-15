@@ -28,8 +28,8 @@
         <activity android:name=".ui.SinaLoginActivity" />
         <activity android:name=".ui.SharedActivity" />
         <activity android:name=".ui.FaceBookLoginActivity" />
-        <activity android:name=".ui.GoogleLoginActivity"/>
-        <activity android:name=".ui.TwitterLoginActivity"/>
+        <activity android:name=".ui.GoogleLoginActivity" />
+        <activity android:name=".ui.TwitterLoginActivity" />
 
         <!--QQ登录配置 start-->
         <activity
@@ -62,6 +62,7 @@
             android:theme="@style/wx_login_style" />
         <!--微信登录配置 end-->
 
+        <!--Facebook Config Start-->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -82,22 +83,13 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+        <!--Facebook Config End-->
 
 
-
-        <!--Google + login-->
-        <!--<meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-################~##########"/>-->
-
-        <meta-data android:name="com.google.android.gms.version"
+        <meta-data
+            android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <!--Twitter登录-->
-      <!--  <resources>
-            <string android:name="com.twitter.sdk.android.CONSUMER_KEY">XXXXXXXXXXX</string>
-            <string android:name="com.twitter.sdk.android.CONSUMER_SECRET">XXXXXXXXXXX</string>
-        </resources>-->
 
     </application>
 

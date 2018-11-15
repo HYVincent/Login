@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -50,6 +51,8 @@ public class SinaLoginActivity extends AppCompatActivity {
     /** 封装了 "access_token"，"expires_in"，"refresh_token"，并提供了他们的管理功能  */
     private Oauth2AccessToken mAccessToken;
 
+    private static final String TAG =  "新浪微博登录页面";
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +65,30 @@ public class SinaLoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //授权方式有三种，第一种对客户端授权 第二种对Web短授权，第三种结合前两中方式
                 mSsoHandler.authorize(new SelfWbAuthListener());
+            }
+        });
+        findViewById(R.id.btn_test_http).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OkHttpUtils.get()
+                        .url("http://v.juhe.cn/weather/index")
+                        .addParams("format","1")
+                        .addParams("cityname","深圳")
+                        .addParams("dtype","json")
+                        .addParams("key","77a262c554de40916edc78858221b4a9")
+                        .build()
+                        .execute(new StringCallback() {
+                            @Override
+                            public void onError(Call call, Exception e, int id) {
+                                Log.d(TAG, "onError: 【" + e.getMessage()+"】");
+                                e.printStackTrace();
+                            }
+
+                            @Override
+                            public void onResponse(String response, int id) {
+                                Log.d(TAG,"response【"+response+"】");
+                            }
+                        });
             }
         });
     }

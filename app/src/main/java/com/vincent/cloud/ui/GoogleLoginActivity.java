@@ -61,6 +61,8 @@ public class GoogleLoginActivity extends AppCompatActivity implements GoogleApiC
                 .requestId()
                 .build();
 
+
+
         mGoogleApiClient = new GoogleApiClient
                 .Builder(this)
                 .addConnectionCallbacks(this)
